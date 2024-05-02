@@ -61,7 +61,7 @@
     * rootProjects
       * 'libs.versions.toml'
         * := version catalog for dependency management
-    * subProjects
+    * subProjects or modules
       * each one with its own build.gradle(.kts)
 * project
   * == 1! piece of your architecture

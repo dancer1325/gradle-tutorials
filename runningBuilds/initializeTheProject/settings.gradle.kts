@@ -11,4 +11,6 @@ plugins {
 }
 
 rootProject.name = "initializeTheProject"
+
+/* subproject or modules to include*/
 include("app")
