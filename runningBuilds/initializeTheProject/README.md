@@ -62,7 +62,7 @@
       * 'libs.versions.toml'
         * := version catalog for dependency management
     * subProjects or modules
-      * each one with its own build.gradle(.kts)
+      * each one with its own 'build.gradle(.kts)'
 * project
   * == 1! piece of your architecture
     * -- can optionally contain -- other projects
@@ -70,4 +70,11 @@
       * library
       * app
       * Gradle plugin
+
+# build.gradle(.kts)
+* := core component of the build process
+  * define about the subproject
+    * tasks
+    * dependencies
+    * plugins
   
