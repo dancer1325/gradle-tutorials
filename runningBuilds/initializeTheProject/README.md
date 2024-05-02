@@ -21,7 +21,7 @@
         * cache directory
           * project specific
         * Problems: Why do NOT I have?
-          * Solution: TODO
+          * Solution: You need to build -- Check next section --
       * '/gradle'
         * gradle wrapper configuration
       * 'gradlew' & 'gradlew.bat'
@@ -35,3 +35,10 @@
     * Problem1: " 2 artifacts failed verification:"
       * Note: It's looking for dependencies of father projects in the path
       * Solution: Run this tutorial in a free location
+
+# Invoke Gradle Wrapper
+* `./gradlew build` / `.\gradlew.bat build`
+  * First time that it's run -> 
+    * downloads the Gradle binaries
+    * caches the Gradle binaries -- Check './gradle' --
+  * Generate '/app/build'
