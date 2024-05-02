@@ -42,3 +42,32 @@
     * downloads the Gradle binaries
     * caches the Gradle binaries -- Check './gradle' --
   * Generate '/app/build'
+
+# Gradle's project structure
+* Check 'gradleProjectStructure.png'
+* build 
+  * := bundle of related software + other builds
+    * related software that you can all together
+      * build
+      * test
+      * release
+    * other builds
+      * optional!!
+      * _Example:_
+        * libraries
+        * plugins
+        * build-time tools
+  * == 'settings.gradle(.kts)' + rootProject + subProjects
+    * rootProjects
+      * 'libs.versions.toml'
+        * := version catalog for dependency management
+    * subProjects
+      * each one with its own build.gradle(.kts)
+* project
+  * == 1! piece of your architecture
+    * -- can optionally contain -- other projects
+    * _Example:_
+      * library
+      * app
+      * Gradle plugin
+  
