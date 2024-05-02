@@ -1,8 +1,10 @@
-# Prerequisites
+# Initialize the project
+
+## Prerequisites
 * Install Gradle  -- Check '../releases/installation'
 * IDE
 
-# How has it been created?
+## How has it been created?
 * `gradle`
   * test the Gradle installation
   * create the directory 'build/'
@@ -36,14 +38,14 @@
       * Note: It's looking for dependencies of father projects in the path
       * Solution: Run this tutorial in a free location
 
-# Invoke Gradle Wrapper
+## Invoke Gradle Wrapper
 * `./gradlew build` / `.\gradlew.bat build`
   * First time that it's run -> 
     * downloads the Gradle binaries
     * caches the Gradle binaries -- Check './gradle' --
   * Generate '/app/build'
 
-# Gradle's project structure
+## Gradle's project structure
 * Check 'gradleProjectStructure.png'
 * build 
   * := bundle of related software + other builds
@@ -71,10 +73,14 @@
       * app
       * Gradle plugin
 
-# build.gradle(.kts)
+## build.gradle(.kts)
 * := core component of the build process
   * define about the subproject
     * tasks
     * dependencies
     * plugins
   
+
+---
+
+# TODO:
