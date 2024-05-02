@@ -83,4 +83,33 @@
 
 ---
 
+# Running Gradle tasks
+* `./gradlew tasks`
+  * list ALL available tasks in the project
+* `./gradlew :app:tasks`
+  * list available tasks in the 'app' subproject
+## Add tasks
+* Define in 'build.gradle(.kts)' of each subproject
+* You can use built-in Gradle tasks
+* `./gradlew :app:taskNameRegistered`
+  * `./gradlew :app:copyTask`
+## Dependency between tasks
+* You can specify and then it's determined by Gradle
+  * `./gradlew build` to check if there is some problems with the tasks defined
+* if there is NO dependency -> Gradle requests to the users a specific execution order
+ 
+
+
+---
+## Ways to run tasks
+* Via IDE, Gradle panel and click in the desired task
+* Via terminal -- `./gradlew TaskName`
+  * _Example:_
+    * `./gradlew build`
+    * `./gradlew jar`
+    * `./gradlew run`
+    * `./gradlew greet` -- print, executing previously the dependant task -- 
+
+---
+
 # TODO:

@@ -41,3 +41,23 @@ tasks.named<Test>("test") {
     // Use JUnit Platform for unit tests.
     useJUnitPlatform()
 }
+
+/* Register a task using the built-in 'Copy' task */
+tasks.register<Copy>("copyTask") {
+    from("source")
+    into("target")
+    include("*.war")
+}
+
+/* Dependencies between tasks */
+tasks.register("hello") {
+    doLast {
+        println("Hello!")
+    }
+}
+tasks.register("greet") {
+    doLast {
+        println("How are you?")
+    }
+    dependsOn("hello")      /* way to express dependency between tasks */
+}
