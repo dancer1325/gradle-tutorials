@@ -31,6 +31,7 @@
       * 'settings.gradle'
         * project's settings file
           * == list of subprojects
+        * since it's a single project -> this file is optional!!
       * '/app'
         * source code + build configuration for the app
   * Problems:
