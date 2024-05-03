@@ -130,4 +130,25 @@
 
 ---
 
+# Applying Plugins
+## Add a plugin to your subproject or module
+* Add manually to your subproject under 'plugins' section
+* Click in your IDE to sync / reload all Gradle projects
+* Check that new tasks are available
+  * `./gradlew :app:tasks`
+    * 'publishing' tasks are available now
+  * click under Gradle view in your IDE, that new tasks are available 
+## Configure the plugin
+* Configure the plugin in the subproject -- 'build.gradle(.kts)' --
+* `./gradlew :app:tasks`
+  * confirm that NEW tasks are available now
+## Use the plugin 
+* Run some new available tasks
+  * `./gradlew :app:publishToMavenLocal`
+    * check the published local artifacts
+      * under '/build/publications', the artifacts published OR
+      * `cd /.m2/repository/com/gradle/tutorial/tutorial`
+
+---
+
 # TODO:
