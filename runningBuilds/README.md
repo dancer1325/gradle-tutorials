@@ -151,4 +151,14 @@
 
 ---
 
+# Incremental builds
+## Display task state
+* Create a 'gradle.properties' for the subproject, adding `org.gradle.console=verbose`
+
+## Task's states
+* Run 2 times a task & check the outcome 
+  * `./gradlew :app:build`
+  * `./gradlew :app:clean :app:build`
+    * states are different, because you are cleaning it with `clean`
+
 # TODO:
