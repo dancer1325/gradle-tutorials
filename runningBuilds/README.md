@@ -161,4 +161,17 @@
   * `./gradlew :app:clean :app:build`
     * states are different, because you are cleaning it with `clean`
 
+---
+
+# Build cache
+* By default, it's disabled
+* How to enable?
+  * Add `org.gradle.caching=true` in the 'gradle.properties'
+  * `./gradlew :app:build`
+* `./gradlew :app:clean :app:build` & `./gradlew :app:clean :app:build`
+  * 1@ `:app:build` populates the cache == stored in a file -- by default, under '$HOME/.gradle/caches' --
+  * 2@ command task's output, check
+    * 'FROM-CACHE'  -- already executed & NOT rerun due to build cache -- 
+    * 'UP-TO-DATE' -- already executed & NOT rerun due to incremental build --
+
 # TODO:
