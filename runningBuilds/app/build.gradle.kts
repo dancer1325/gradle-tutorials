@@ -17,11 +17,14 @@ repositories {
 
 dependencies {
     // Use JUnit Jupiter for testing.
+    // libs.junit.jupiter               -- way to use in the subprojects / modules, the library declared
+    // each time you type libs. ....., you get autocompletions by the IDE
     testImplementation(libs.junit.jupiter)
 
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 
     // This dependency is used by the application.
+    // libs.junit.jupiter               -- way to use in the subprojects / modules, the library declared  '-' -- are converted to -> '.'
     implementation(libs.guava)
 }
 

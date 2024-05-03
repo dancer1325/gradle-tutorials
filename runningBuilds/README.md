@@ -112,4 +112,22 @@
 
 ---
 
+# Understanding dependencies
+## libs.versions.toml
+* version catalog
+* `libs.givenName`
+  * way to use in the subprojects / modules the library declared
+## hierarchy dependency
+* Ways
+  * `./gradlew :app:dependencies`
+    * outputs the hierarchy dependencies for the subproject
+  * `./gradlew build --scan` & enter 'yes'
+    * generates a link in [GradleBuildScan](https://scans.gradle.com/)
+    * check the dependency tree in  'dependencies,compileClassPath' OR 'dependencies,runtimeClasspath'
+## Updating project dependencies
+* Done manually in the version catalog file
+  * Once you change & you use Jetbrains product -> click under Gradle view in 'Reload all gradle projects' 
+
+---
+
 # TODO:
