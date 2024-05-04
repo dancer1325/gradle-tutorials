@@ -139,6 +139,7 @@
   * `./gradlew :app:tasks`
     * 'publishing' tasks are available now
   * click under Gradle view in your IDE, that new tasks are available 
+* If you add a plugin -- can also implicitly add -- another plugin  -- Example: application plugin -- 
 ## Configure the plugin
 * Configure the plugin in the subproject -- 'build.gradle(.kts)' --
 * `./gradlew :app:tasks`
