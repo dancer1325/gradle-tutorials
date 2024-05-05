@@ -11,6 +11,7 @@ plugins {
     application
 
     // add Maven Publish plugin
+    // id «plugin id» version «plugin version»          since it's a Core plugin -> version NOT required to indicate
     id("maven-publish")
 }
 
